@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e3b8-de29-8000-9bd1-011c48011c48_43506</versionUuid>
+    <rule>
+        <name>ZPEditGroup</name>
+        <uuid>_a-0000e3b8-de29-8000-9bd1-011c48011c48_43477</uuid>
+        <description></description>
+        <parentUuid>_a-0000e385-b1d3-8000-9bb6-011c48011c48_31717</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>a!localVariables(
+  local!group,
+#"SYSTEM_SYSRULES_formLayout_v1"(
+  label: "Form",
+  contents: {
+    #"SYSTEM_SYSRULES_sectionLayout_v1"(
+      contents: {
+        #"SYSTEM_SYSRULES_pickerFieldGroups"(
+          label: "GroupOicker",
+          value: local!group,
+          saveInto: local!group
+        )
+      }
+    ),
+  },
+  buttons: #"SYSTEM_SYSRULES_ButtonLayout"(
+    primaryButtons: {
+      #"SYSTEM_SYSRULES_ButtonWidget"(
+        label: "Submit",
+        submit: true,
+        style: "PRIMARY",
+        saveInto: #"SYSTEM_SYSRULES_editGroup"(
+          group: local!group,
+          name: "ZachNewGroup",
+          groupType: "ChangeGroupType",
+          onSuccess: a!save(local!group, fv!group),
+          onError: {}
+        )
+      )
+    }
+  )
+))</definition>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e3b8-de29-8000-9bd1-011c48011c48_43506"/>
+    </history>
+</contentHaul>

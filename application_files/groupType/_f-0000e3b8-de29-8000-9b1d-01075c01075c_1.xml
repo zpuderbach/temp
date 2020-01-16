@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groupTypeHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_f-0000e3b8-de29-8000-9b1d-01075c01075c_2</versionUuid>
+    <groupType>
+        <name>ZachGroupTypes</name>
+        <uuid>_f-0000e3b8-de29-8000-9b1d-01075c01075c_1</uuid>
+        <description></description>
+        <attributes/>
+    </groupType>
+    <history>
+        <historyInfo versionUuid="_f-0000e3b8-de29-8000-9b1d-01075c01075c_2"/>
+    </history>
+</groupTypeHaul>

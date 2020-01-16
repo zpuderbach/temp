@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e3af-a018-8000-9bcf-011c48011c48_36157</versionUuid>
+    <outboundIntegration>
+        <name>TestAPI</name>
+        <uuid>5c6a0334-e5fc-443c-9202-820100655bd8</uuid>
+        <description></description>
+        <parentUuid>_a-0000e385-b1d3-8000-9bb6-011c48011c48_31717</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition></definition>
+        <metadataExpr></metadataExpr>
+        <preferredEditor>legacy</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+        <sharedConfigParameters>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <url xsi:type="xsd:string">https://dev194.appiancloud.com/suite/webapi/jsontest</url>
+                <isInheritedUrlOptionSelected xsi:type="xsd:boolean">false</isInheritedUrlOptionSelected>
+                <relativePath xsi:type="xsd:string"/>
+                <authType xsi:type="xsd:string">Basic</authType>
+                <authDetails xsi:type="a:OutboundIntegrationAuthBasic">
+                    <a:username xsi:type="a:EncryptedText"/>
+                    <a:password xsi:type="a:EncryptedText"/>
+                    <a:isPreemptive>true</a:isPreemptive>
+                </authDetails>
+            </a:Dictionary>
+        </sharedConfigParameters>
+        <configParameters>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <contentType xsi:type="xsd:string"/>
+                <automaticallyConvert xsi:type="xsd:boolean">true</automaticallyConvert>
+                <jsonSchema xsi:nil="true" xsi:type="a:NestedChoice?list"/>
+                <method xsi:type="xsd:string">GET</method>
+                <headers xsi:type="a:NameValue?list"/>
+                <documentConfig xsi:type="xsd:string"/>
+                <parameters xsi:type="a:NameValue?list"/>
+                <featureVersion xsi:type="xsd:int">1</featureVersion>
+                <timeout xsi:type="xsd:int">100</timeout>
+                <body xsi:type="xsd:string"/>
+                <flattenedJsonSchema xsi:nil="true" xsi:type="a:Text?list"/>
+            </a:Dictionary>
+        </configParameters>
+        <isWrite>false</isWrite>
+        <integrationType>system.http</integrationType>
+        <connectedSystemUuid></connectedSystemUuid>
+        <isConnectedSystemConnectionOptionSelected>false</isConnectedSystemConnectionOptionSelected>
+        <integrationOutputs>
+            <a:Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <outputs xsi:type="a:IntegrationOutput?list"/>
+            </a:Dictionary>
+        </integrationOutputs>
+    </outboundIntegration>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e3af-a018-8000-9bcf-011c48011c48_36157"/>
+    </history>
+</contentHaul>

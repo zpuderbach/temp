@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webApiHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>cfb29455-5bd1-4146-ab96-ad6447fbd464</versionUuid>
+    <webApi a:uuid="32630ded-6787-4825-8f1d-5f4ed489be15" name="TestAPI">
+        <a:description></a:description>
+        <a:expression>#"SYSTEM_SYSRULES_editGroup"(group: togroup(70), name: "ZachOldGroup", groupType: "ChangeGroupType", onSuccess: 
+  #"SYSTEM_SYSRULES_httpResponse_v1"(
+    /*
+    * Set an HTTP header that tells the client that the body of the response
+    * will be JSON-encoded.
+    */
+    headers: {
+      #"SYSTEM_SYSRULES_httpHeader"(name: "Content-Type", value: "application/json")
+    },
+    /*
+    * JSON-encode the value of 'local!user' and place it in the response body.
+    */
+    body: #"SYSTEM_SYSRULES_toJson_v1"(value: {group(70,"groupName")})
+  ))</a:expression>
+        <a:urlAlias>jsontest</a:urlAlias>
+        <a:httpMethod>POST</a:httpMethod>
+        <a:system>false</a:system>
+        <a:requestBodyType>NONE</a:requestBodyType>
+    </webApi>
+    <roleMap/>
+    <typedValue>
+        <type>
+            <name>WebApiRequest?list</name>
+            <namespace>http://www.appian.com/ae/types/2009</namespace>
+        </type>
+        <value>
+            <el>
+                <a:path/>
+                <a:queryParameters>
+                    <a:name>username</a:name>
+                    <a:value>zach.puderbach</a:value>
+                </a:queryParameters>
+                <a:body/>
+            </el>
+        </value>
+    </typedValue>
+    <history>
+        <historyInfo versionUuid="d5c7a52b-5237-4811-9d93-1e9b3db403dc"/>
+        <historyInfo versionUuid="cfb29455-5bd1-4146-ab96-ad6447fbd464"/>
+    </history>
+</webApiHaul>

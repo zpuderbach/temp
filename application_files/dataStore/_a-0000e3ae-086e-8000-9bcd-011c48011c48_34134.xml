@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataStoreHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49994</versionUuid>
+    <dataStore>
+        <uuid>_a-0000e3ae-086e-8000-9bcd-011c48011c48_34134</uuid>
+        <name>ZP_DB</name>
+        <description></description>
+        <dataSourceKey>jdbc/Appian</dataSourceKey>
+        <adaptingExplicitSqlNames>true</adaptingExplicitSqlNames>
+        <autoUpdateSchema>false</autoUpdateSchema>
+        <entities>
+            <entity>
+                <uuid>66c5337a-b148-4d09-9309-4969b40c5875</uuid>
+                <name>ZP_Basic</name>
+                <type>{urn:com:appian:types}ZP_Basic</type>
+            </entity>
+        </entities>
+    </dataStore>
+    <isPublished>true</isPublished>
+    <roleMap>
+        <role inherit="false" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e3ae-086e-8000-9bcd-011c48011c48_34146"/>
+        <historyInfo versionUuid="_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49994"/>
+    </history>
+</dataStoreHaul>
